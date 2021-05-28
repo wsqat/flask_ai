@@ -37,7 +37,7 @@ pip install -r requirements.txt
 FLASK_ENV=development FLASK_APP=app.py flask run
 ```
 
-![服务器接收信息](./运行截图/服务器接收信息.png)
+![服务器接收信息](./img/1.png)
 
 
 
@@ -46,14 +46,14 @@ FLASK_ENV=development FLASK_APP=app.py flask run
 ```
 curl -X POST -F file=@cat.jpeg http://127.0.0.1:5000/predict
 ```
-![远程主机向服务器发送请求](./运行截图/远程主机向服务器发送请求.png)
+![远程主机向服务器发送请求](./img/2.png)
 
 > 从浏览器发出请求，图片在服务端本地
 
 ```
 http://127.0.0.1:5000/predict?path=/data/Projects/Flask/deploy/flask_ai/cat.jpeg
 ```
-![http发送请求](./运行截图/http发送请求.png)
+![http发送请求](./img/3.png)
 
 
 
